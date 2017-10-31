@@ -28,7 +28,7 @@ CREATE INDEX indx_user_username ON user (username);
 
 insert into user (id, username, password) values(fb008464-be46-11e7-abc4-cec278b6b50a, 'Jorge', '1234');
 
-Para evitar ClassNotFound io.netty:netty-all crear RestTemplateConfiguration
+Para evitar ClassNotFoundExcepcion io.netty:netty-all crear RestTemplateConfiguration
 
 https://github.com/spring-projects/spring-boot/issues/7240
 
