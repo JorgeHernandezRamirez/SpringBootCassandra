@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <mapping>
+        <class-a>com.jorgehernandezramirez.spring.springboot.cassandra.dao.entity.UserEntity</class-a>
+        <class-b>com.jorgehernandezramirez.spring.springboot.cassandra.service.dto.UserDto</class-b>
+        <field custom-converter="com.jorgehernandezramirez.spring.springboot.cassandra.config.UUIDStringDozerConverter">
+            <a>id</a>
+            <b>id</b>
+        </field>
+    </mapping>
+</mappings>

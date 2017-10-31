@@ -1,0 +1,33 @@
+group 'com.jorgehernandezramirez.spring.springboot'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.8.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+springBoot {
+    mainClass = "com.jorgehernandezramirez.spring.sprinboot.cassandra.Application"
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-data-cassandra')
+    compile group: 'net.sf.dozer', name: 'dozer', version: dozer_version
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}
