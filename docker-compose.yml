@@ -1,4 +1,5 @@
 cassandra:
+  container_name: my-cassandra
   image: cassandra:3.11.1
   ports:
     - 9042:9042
